@@ -9,12 +9,10 @@ public class SolitaireDeck extends Deck{
 	
 	SolitaireDeck(int x, int y) {
 		super(1, true, x + xOffset, y + yOffset);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public void mouseClickedAction(DigitalPicture pict, Pixel pix) {
-		// TODO Auto-generated method stub
 	}
 
 }

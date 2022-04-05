@@ -15,7 +15,7 @@ import picture_project_resources.*;
 public class Solitaire implements CardGame, ImageObserver{
 	
 	private static final int xOrigin = 100;
-	private static final int yOrigin = 100;
+	private static final int yOrigin = 10;
 	
 	private SolitairePlayer solitairePlayer = new SolitairePlayer(xOrigin, yOrigin);
 	private Deck solitaireDeck = new SolitaireDeck(xOrigin, yOrigin);
@@ -44,7 +44,7 @@ public class Solitaire implements CardGame, ImageObserver{
 		initializeStacks();
 	}
 	
-	
+	//Adds the appropriate number of cards to each stack - one face up and i more face down
 	public void initializeStacks() {
 		for(int i = 0; i < 7; i++) {
 			stacks.add(new Stack(xOrigin + 30 + 110*i, yOrigin + 210));
@@ -56,21 +56,21 @@ public class Solitaire implements CardGame, ImageObserver{
 			}
 		}
 	}
-	
+
+	//Probably delete
 	@Override
 	public void drawCard(Player player) {
-		// TODO Auto-generated method stub
-		
+
 	}
 
+	//Draws each game element
+	//TODO  Optimize
 	@Override
 	public void draw(Graphics2D graphics, ImageObserver io) {
-		// TODO Auto-generated method stub
-		
+
 		for(DropZone d: dropZones) d.draw(graphics, io);
 		for(Stack s : stacks) s.draw(graphics, io);
-		if(solveButton.isVisible()) System.out.println("A");
-		solveButton.draw(graphics, io);
+		//solveButton.draw(graphics, io);
 		resetButton.draw(graphics, io);
 		solitaireDeck.draw(graphics, io);
 		solitairePlayer.draw(graphics, io);
@@ -78,15 +78,15 @@ public class Solitaire implements CardGame, ImageObserver{
 			selectedCard.draw(graphics, io, selectedCardLocation.getX()-Card.WIDTH/2, selectedCardLocation.getY()-Card.HEIGHT/2);
 	}
 
+	//Probably delete?
 	@Override
 	public void reset() {
-		// TODO Auto-generated method stub
-		
+
 	}
 
+	//On mouse click, execute result based on pixel input
 	@Override
-	public void mouseClickedAction(final DigitalPicture pict, final Pixel pix) {
-		// TODO Auto-generated method stub
+	public void mouseClickedAction(DigitalPicture pict, Pixel pix) {
 		if(solitaireDeck.wasClicked(pix) && solitaireDeck.size() > 0) {
 			for(int i = 0; i < 1; i++) {
 				if(solitaireDeck.size() > 0)
@@ -95,6 +95,7 @@ public class Solitaire implements CardGame, ImageObserver{
 			}	
 		}
 		else if(resetButton.wasClicked(pix)) {
+			System.out.println("RESET");;
 			int iterations = solitairePlayer.handSize();
 			for(int i = 0; i < iterations; i++) {
 				Card returningCard = solitairePlayer.getTopCard();
@@ -102,46 +103,44 @@ public class Solitaire implements CardGame, ImageObserver{
 				solitaireDeck.returnCard(returningCard);
 			}
 		}
+		/*
 		else if(solveButton.wasClicked(pix) && solveButton.isVisible()) {
 			this.solve(pict, pix);
 		}
+		*/
+
 	
 		
 	}
-	
-	public void animate(DigitalPicture pict, Pixel pix) {
-		for(int i = 0; i < 100; i++) {
-	    	Pixel p = new Pixel(pict, pix.getX(), pix.getY());
-	    	p = new Pixel(pict, pix.getX() + i, pix.getY() + i);
-			container.mouseDraggedAction(pict, p);
-			System.out.println(selectedCardLocation + " " + i);
-			container.draw();
-			System.out.println(i);
-		}
-	}
-	
+
+	//Returns size of deck
 	public int deckSize() {
 		return solitaireDeck.size();
 	}
-	
+
+	//Returns nth card in deck
 	public Card nthCard(int n) {
 		return solitaireDeck.nthCard(n);
 	}
 
+	//returns true if a card is currently selected
 	@Override
 	public boolean cardSelected() {
 		return cardSelected;
 	}
 
+	//returns the current object selected
 	@Override
 	public InteractableObject selectedCard() {
 		return selectedCard;
 	}
-	
+
+	//sets the selected card to a Card object
 	public void selectCard(Card c) {
 		selectedCard = c;
 	}
 
+	//
 	@Override
 	public void mouseDraggedAction(DigitalPicture pict, Pixel pix) {
 		if(!cardSelected && solitairePlayer.handSize() > 0 && solitairePlayer.wasClicked(pix)){
@@ -163,7 +162,7 @@ public class Solitaire implements CardGame, ImageObserver{
 	
 	@Override
 	public void returnSelectedCard(Pixel pix) {
-		// TODO Auto-generated method stub
+		// TODO  Optimize
 		if(cardSelected) {
 			int stackIndex = overStack(pix);
 			int dropZoneIndex = overDropZone(pix);
@@ -232,13 +231,13 @@ public class Solitaire implements CardGame, ImageObserver{
 	
 	
 	private boolean checkAddLegality(int stackIndex) {
+		// TODO  Optimize
 		Card reference;
 		if(cardFromHand)
 			reference = (Card) selectedCard;
 		else
 			reference = ((Stack) selectedCard).nthCard(0);
 
-		
 		Card stackTop = stacks.get(stackIndex).nthCard(stacks.get(stackIndex).size()-1);
 		boolean legal = false;
 		if(stackTop.suit() == Card.Suit.NULL && reference.value() == Card.KING) {
@@ -272,13 +271,11 @@ public class Solitaire implements CardGame, ImageObserver{
 	}
 	
 	public void solveSmallestCard(DigitalPicture pict, Pixel pix) {
-		
+		// TODO  Get working
 		Card smallestCard = findSmallestCard();
 		Coordinate cardPosition = smallestCard.getCenterPoint();
 		Coordinate destination;
-		
-		System.out.println(smallestCard);
-		
+
 		switch (smallestCard.suit()) {
 			case CLUBS:
 				destination = clubs.getCenterPoint();
@@ -306,17 +303,11 @@ public class Solitaire implements CardGame, ImageObserver{
 		for(int j = 0; j < numberOfFrames; j++) {
 			Picture display = new Picture(HEIGHT, WIDTH);
 			Graphics2D graphics = display.createGraphics();
-			
+			graphics.drawImage(new Picture("GameResources\\CardResources\\face.png").getBufferedImage(), cardPosition.getX(), cardPosition.getY(),this);
 			graphics.drawImage(new Picture("GameResources\\General\\table.png").getBufferedImage(),0,0,this);
 			
 			pix = new Pixel(display, cardPosition.getX() + j*(int) (movementSpeed * horizontalDistance/distance) + xOrigin, cardPosition.getY() + j*(int) (movementSpeed * verticalDistance/distance) + yOrigin);
-			System.out.println(pix.getX() + " " + pix.getY());
 			container.mouseDraggedAction(display, pix);
-			/*
-			graphics.drawImage(new Picture("GameResources\\General\\solve_button.png").getBufferedImage(), pix.getX(), pix.getY(), this);
-			this.draw(graphics, container);
-			container.setImage(display);
-			*/
 		}
 	}
 	
@@ -360,7 +351,6 @@ public class Solitaire implements CardGame, ImageObserver{
 
 	@Override
 	public boolean imageUpdate(Image img, int infoflags, int x, int y, int width, int height) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 }

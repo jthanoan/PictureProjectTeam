@@ -249,7 +249,6 @@ public class Card implements InteractableObject, ImageObserver{
 
 	@Override
 	public boolean imageUpdate(Image img, int infoflags, int x, int y, int width, int height) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 	

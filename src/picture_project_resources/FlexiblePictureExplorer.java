@@ -935,14 +935,12 @@ public abstract class FlexiblePictureExplorer implements MouseMotionListener, Ac
 
 		@Override
 		public void mouseDraggedAction(DigitalPicture pict, Pixel pix) {
-			// TODO Auto-generated method stub
-			
+
 		}
 
 		@Override
 		public void mouseUpdateAction(boolean mouseDown, Pixel pix) {
-			// TODO Auto-generated method stub
-			
+
 		}
     };
     Thread.sleep(10000);

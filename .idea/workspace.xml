@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="92a8d00a-ae30-482f-9dee-678ac7702e4c" name="Changes" comment="Critical security update">
+    <list default="true" id="92a8d00a-ae30-482f-9dee-678ac7702e4c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameResources/CardResources/numbers_final.png" beforeDir="false" afterPath="$PROJECT_DIR$/GameResources/CardResources/numbers_final.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/card_game_resources/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_game_resources/Button.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/card_game_resources/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_game_resources/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/card_game_resources/CardApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_game_resources/CardApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/card_games/DeckResetButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_games/DeckResetButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/card_games/Solitaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_games/Solitaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/card_games/SolitaireDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_games/SolitaireDeck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/card_games/SolitaireDropZone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_games/SolitaireDropZone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/card_games/SolitairePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_games/SolitairePlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/card_games/SolveSolitaireButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_games/SolveSolitaireButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/picture_project_resources/FlexiblePictureExplorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/picture_project_resources/FlexiblePictureExplorer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,13 +36,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
   </component>
   <component name="RunManager">
     <configuration name="CardApplication" type="Application" factoryName="Application">
@@ -55,14 +55,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1648128177572</updated>
-      <workItem from="1648561100690" duration="1581000" />
-      <workItem from="1648612027075" duration="46000" />
-      <workItem from="1648648986796" duration="300000" />
     </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -74,9 +68,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Critical security update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Critical security update" />
   </component>
 </project>

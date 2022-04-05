@@ -30,7 +30,6 @@ public class DeckResetButton extends Button{
 
 	@Override
 	public void draw(Graphics graphics, ImageObserver io) {
-		// TODO Auto-generated method stub
 		graphics.drawImage(base, x, y, io);
 		graphics.drawImage(icon, x + WIDTH/2 - ICON_WIDTH/2, y + HEIGHT/2 - ICON_HEIGHT/2, io);
 	}

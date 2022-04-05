@@ -18,13 +18,13 @@ public abstract class Button {
 	};
 	
 	public boolean wasClicked(Pixel pix) {
+		System.out.println(pix.getX() + " " +pix.getY());
 		return hitbox.wasClicked(pix);
 	}
 	
 	public abstract void draw(Graphics graphics, ImageObserver io);
 
 	public boolean isVisible() {
-		// TODO Auto-generated method stub
 		return visible;
 	}
 }

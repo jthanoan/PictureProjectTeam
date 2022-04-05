@@ -57,8 +57,7 @@ public class SolitairePlayer implements Player{
 	
 	@Override
 	public void takeCard(Card c) {
-		// TODO Auto-generated method stub
-		
+
 	}
 	
 	@Override
@@ -78,7 +77,6 @@ public class SolitairePlayer implements Player{
 
 	@Override
 	public int handSize() {
-		// TODO Auto-generated method stub
 		return hand.size();
 	}
 	public void returnCard(Card c) {

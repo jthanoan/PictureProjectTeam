@@ -61,7 +61,6 @@ public class SolitaireDropZone extends DropZone{
 	
 	@Override
 	public void draw(Graphics2D graphics, ImageObserver io) {
-		// TODO Auto-generated method stub
 		if(cards.size() == 0) {
 			graphics.drawImage(empty, super.getX(), super.getY(), io);
 			graphics.drawImage(suitIcon, super.getX()+WIDTH/2-ICON_WIDTH/2, super.getY()+HEIGHT/2-ICON_HEIGHT/2, io);
@@ -72,7 +71,6 @@ public class SolitaireDropZone extends DropZone{
 
 	@Override
 	public void addCard(Card c) {
-		// TODO Auto-generated method stub
 		cards.add(c);
 	}
 	

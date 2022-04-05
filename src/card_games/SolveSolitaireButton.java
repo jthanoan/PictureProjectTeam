@@ -25,7 +25,6 @@ public class SolveSolitaireButton extends Button{
 
 	@Override
 	public void draw(Graphics graphics, ImageObserver io) {
-		// TODO Auto-generated method stub
 		if(super.isVisible())
 			graphics.drawImage(base, x, y, io);
 	}
