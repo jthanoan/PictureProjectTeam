@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92a8d00a-ae30-482f-9dee-678ac7702e4c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="92a8d00a-ae30-482f-9dee-678ac7702e4c" name="Changes" comment="Balance changes 4/5/22">
       <change beforePath="$PROJECT_DIR$/src/card_game_resources/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_game_resources/Button.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/card_game_resources/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_game_resources/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/card_game_resources/CardApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_game_resources/CardApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/card_games/DeckResetButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_games/DeckResetButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/card_games/Solitaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_games/Solitaire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/card_games/SolitaireDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_games/SolitaireDeck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/card_games/SolitaireDropZone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_games/SolitaireDropZone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/card_games/SolitairePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_games/SolitairePlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/card_games/SolveSolitaireButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_games/SolveSolitaireButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/picture_project_resources/FlexiblePictureExplorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/picture_project_resources/FlexiblePictureExplorer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +46,14 @@
       <option name="presentableId" value="Default" />
       <updated>1648128177572</updated>
     </task>
+    <task id="LOCAL-00001" summary="Balance changes 4/5/22">
+      <created>1649165763864</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1649165763864</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -68,5 +66,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Balance changes 4/5/22" />
+    <option name="LAST_COMMIT_MESSAGE" value="Balance changes 4/5/22" />
   </component>
 </project>

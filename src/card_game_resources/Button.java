@@ -10,7 +10,7 @@ public abstract class Button {
 	private boolean visible = true;
 	
 	public Button(int x, int y, int width, int height) {
-		hitbox = new BoundingBox(x,y,x+width,x+height);
+		hitbox = new BoundingBox(x,y,x+width,y+height);
 	} 
 	
 	public void switchVisibility() {
@@ -18,7 +18,6 @@ public abstract class Button {
 	};
 	
 	public boolean wasClicked(Pixel pix) {
-		System.out.println(pix.getX() + " " +pix.getY());
 		return hitbox.wasClicked(pix);
 	}
 	

@@ -29,7 +29,7 @@ public class CardApplication extends FlexiblePictureExplorer implements ImageObs
 		
 		graphics.drawImage(new Picture("GameResources\\General\\table.png").getBufferedImage(),0,0,this);
 		if(currentGame.cardSelected()) currentGame.setSelectedCardLocation(mouseLocation);
-		currentGame.draw(graphics, this);
+			currentGame.draw(graphics, this);
 
 		setImage(display);
 	}

@@ -24,6 +24,7 @@ public class DeckResetButton extends Button{
 	
 	public DeckResetButton(int x, int y) {
 		super(x, y, WIDTH, HEIGHT);
+		System.out.println(x + " " + y);
 		this.x = x;
 		this.y = y;
 	}
