@@ -3,7 +3,7 @@ import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.image.ImageObserver;
 
-import card_games.*;
+import card_games.solitaire.Solitaire;
 import picture_project_resources.DigitalPicture;
 import picture_project_resources.FlexiblePictureExplorer;
 import picture_project_resources.Picture;

@@ -1,13 +1,9 @@
-package card_games;
-import java.awt.Graphics;
+package card_games.solitaire;
 import java.awt.Graphics2D;
 import java.awt.Image;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.image.ImageObserver;
 import java.util.ArrayList;
 import java.util.Arrays;
-import javax.swing.Timer;
 
 import card_game_resources.*;
 import picture_project_resources.*;

@@ -1,4 +1,4 @@
-package card_games;
+package card_games.solitaire;
 import card_game_resources.*;
 import picture_project_resources.DigitalPicture;
 import picture_project_resources.Pixel;
