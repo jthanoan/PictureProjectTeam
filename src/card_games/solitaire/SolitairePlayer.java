@@ -79,6 +79,7 @@ public class SolitairePlayer implements Player{
 	public int handSize() {
 		return hand.size();
 	}
+
 	public void returnCard(Card c) {
 		hand.addCard(c);
 	}

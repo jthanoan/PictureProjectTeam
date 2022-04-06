@@ -9,7 +9,7 @@ import picture_project_resources.DigitalPicture;
 import picture_project_resources.Picture;
 import picture_project_resources.Pixel;
 
-public abstract class Deck {
+public class Deck {
 	private final int HEIGHT = 160;
 	private final int WIDTH = 120;
 	private ArrayList<Card> deck;
@@ -23,7 +23,7 @@ public abstract class Deck {
 	
 	private boolean sizeUpdated = false;
 	
-	protected Deck(int numberOfDecks, boolean shuffled, int x, int y){
+	public Deck(int numberOfDecks, boolean shuffled, int x, int y){
 		generateNewDeck(numberOfDecks, shuffled);
 		this.x = x;
 		this.y = y;
@@ -103,7 +103,6 @@ public abstract class Deck {
 	public void returnCard(Card c) {
 		deck.add(0, c);
 	}
-	
-	public abstract void mouseClickedAction(DigitalPicture pict, Pixel pix);
+
 	
 }

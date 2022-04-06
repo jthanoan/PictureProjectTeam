@@ -27,6 +27,7 @@ import card_game_resources.Coordinate;
  * @author Keith McDermottt, gte047w@cc.gatech.edu
  * @author Barb Ericson ericson@cc.gatech.edu
  */
+
 public abstract class FlexiblePictureExplorer implements MouseMotionListener, ActionListener, MouseListener
 {
  
@@ -112,6 +113,19 @@ public abstract class FlexiblePictureExplorer implements MouseMotionListener, Ac
    * Public constructor 
    * @param picture the picture to explore
    */
+
+  private String keyPressed="";
+
+  private String keyReleased="";
+
+  public String keyPressed() {
+    return keyPressed;
+  }
+
+  public String keyReleased() {
+    return keyReleased;
+  }
+
   public FlexiblePictureExplorer(DigitalPicture picture)
   {
     // set the fields
@@ -952,5 +966,21 @@ public abstract class FlexiblePictureExplorer implements MouseMotionListener, Ac
     Thread.sleep(10000);
     expl.close();
   }
-  
+
+  public class Key implements KeyListener {
+    @Override
+    public void keyTyped(KeyEvent e) {
+    }
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+      keyPressed = KeyEvent.getKeyText(e.getKeyCode());
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
+      keyReleased = KeyEvent.getKeyText(e.getKeyCode());
+    }
+  }
+
 }

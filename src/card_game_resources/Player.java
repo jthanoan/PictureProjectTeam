@@ -12,11 +12,11 @@ public interface Player {
 	
 	public void takeCard(Card c);
 	
-	public abstract void draw(Graphics2D graphics, ImageObserver io);
+	public void draw(Graphics2D graphics, ImageObserver io);
 	
 	public boolean wasClicked(Pixel pix);
 	
 	public int handSize();
 	
-	public abstract void mouseClickedAction(Pixel pix);
+	public void mouseClickedAction(Pixel pix);
 }

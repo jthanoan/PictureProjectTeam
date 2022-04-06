@@ -14,7 +14,7 @@ public class Solitaire implements CardGame, ImageObserver{
 	private static final int yOrigin = 10;
 	
 	private SolitairePlayer solitairePlayer = new SolitairePlayer(xOrigin, yOrigin);
-	private Deck solitaireDeck = new SolitaireDeck(xOrigin, yOrigin);
+	private Deck solitaireDeck = new Deck(1, true, xOrigin + 30, yOrigin + 30);
 	
 	private DeckResetButton resetButton = new DeckResetButton(xOrigin + 30, yOrigin + 50);
 	private SolveSolitaireButton solveButton = new SolveSolitaireButton(xOrigin + 200, yOrigin+100);
