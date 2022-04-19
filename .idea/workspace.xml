@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92a8d00a-ae30-482f-9dee-678ac7702e4c" name="Changes" comment="Future Development">
-      <change afterPath="$PROJECT_DIR$/src/card_games/slapjack/SlapjackComputerPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/card_games/slapjack/SlapjackHumanPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/card_game_resources/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_game_resources/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/card_game_resources/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_game_resources/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/card_games/slapjack/Slapjack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_games/slapjack/Slapjack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/card_games/solitaire/Solitaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_games/solitaire/Solitaire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/card_games/solitaire/SolitaireDeck.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/card_games/solitaire/SolitairePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_games/solitaire/SolitairePlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/picture_project_resources/FlexiblePictureExplorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/picture_project_resources/FlexiblePictureExplorer.java" afterDir="false" />
+    <list default="true" id="92a8d00a-ae30-482f-9dee-678ac7702e4c" name="Changes" comment="Delete your code">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_30_2022_10_12_AM_[Changes]/shelved.patch" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +32,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="card_games.slapjack" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="CardApplication" type="Application" factoryName="Application">
@@ -88,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649167561240</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Delete your code">
+      <created>1649254250545</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649254250545</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,7 +109,8 @@
     <MESSAGE value="Balance changes 4/5/22" />
     <MESSAGE value="Reset Button Fixed" />
     <MESSAGE value="Future Development" />
-    <option name="LAST_COMMIT_MESSAGE" value="Future Development" />
+    <MESSAGE value="Delete your code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete your code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
