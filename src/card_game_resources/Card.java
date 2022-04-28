@@ -8,6 +8,7 @@ import picture_project_resources.*;
 
 public class Card implements InteractableObject, ImageObserver{
 	private Suit suit;
+	private Color color;
 	private int value;
 	private boolean flipped;
 	
@@ -28,7 +29,13 @@ public class Card implements InteractableObject, ImageObserver{
 	private static final BufferedImage NUMBERS = new Picture("GameResources\\CardResources\\numbers_final.png").getBufferedImage();
 	private static final BufferedImage SMALL_ICONS = new Picture("GameResources\\CardResources\\icons_small.png").getBufferedImage();
 	private static final BufferedImage LARGE_ICONS = new Picture("GameResources\\CardResources\\icons_large.png").getBufferedImage();
-	
+	private static final BufferedImage JACK_FACE_BLACK = new Picture("GameResources\\CardResources\\jack_face_black.png").getBufferedImage();
+	private static final BufferedImage QUEEN_FACE_BLACK = new Picture("GameResources\\CardResources\\queen_face_black.png").getBufferedImage();
+	private static final BufferedImage KING_FACE_BLACK = new Picture("GameResources\\CardResources\\king_face_black.png").getBufferedImage();
+	private static final BufferedImage JACK_FACE_RED = new Picture("GameResources\\CardResources\\jack_face_red.png").getBufferedImage();
+	private static final BufferedImage QUEEN_FACE_RED = new Picture("GameResources\\CardResources\\queen_face_red.png").getBufferedImage();
+	private static final BufferedImage KING_FACE_RED = new Picture("GameResources\\CardResources\\king_face_red.png").getBufferedImage();
+
 	private static final int numberHeight = 15;
 	private static final int numberWidth = 13;
 	
@@ -138,12 +145,26 @@ public class Card implements InteractableObject, ImageObserver{
 		CLUBS,
 		NULL
 	}
+
+	public enum Color{
+		RED,
+		BLACK
+	}
 	
 	public Card(Suit suit, int value, boolean flipped) {
 		this.suit = suit;
 		this.value = value;
 		this.flipped = flipped;
+
+		if(suit == Suit.HEARTS || suit == Suit.DIAMONDS)
+			this.color = Color.RED;
+		else
+			this.color = Color.BLACK;
+
 		initializeCardFace();
+
+
+
 	}
 	
 	public void initializeCardFace() {
@@ -197,10 +218,29 @@ public class Card implements InteractableObject, ImageObserver{
 					graphics.drawImage(largeIcon, c.getX(), c.getY(), io);
 				else
 					graphics.drawImage(invertedLargeIcon, c.getX(), c.getY(), io);
-
 			}
 		}
-		
+
+		else if(value == JACK){
+			if(this.color() == Color.RED)
+				graphics.drawImage(JACK_FACE_RED, 20,20,io);
+			else
+				graphics.drawImage(JACK_FACE_BLACK, 20,20,io);
+		}
+		else if(value == QUEEN){
+			if(this.color() == Color.RED)
+				graphics.drawImage(QUEEN_FACE_RED, 20,20,io);
+			else
+				graphics.drawImage(QUEEN_FACE_BLACK, 20,20,io);
+		}
+		else if(value == KING){
+			if(this.color() == Color.RED)
+				graphics.drawImage(KING_FACE_RED, 20,20,io);
+			else
+				graphics.drawImage(KING_FACE_BLACK, 20,20,io);
+
+		}
+
 		face = base;
 	}
 	
@@ -211,7 +251,11 @@ public class Card implements InteractableObject, ImageObserver{
 	public Suit suit() {
 		return suit;
 	}
-	
+
+	public Color color(){
+		return color;
+	}
+
 	public void flip() {
 		flipped = !flipped;
 

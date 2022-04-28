@@ -47,6 +47,8 @@ public class CardApplication extends FlexiblePictureExplorer implements ImageObs
 	
 	public static void main(String[] args) {
 		CardApplication ca = new CardApplication();
+		Picture p = new Picture("LOCATION");
+		System.out.println(p.getHeight() + " " + p.getWidth());
 	}
 
 	@Override

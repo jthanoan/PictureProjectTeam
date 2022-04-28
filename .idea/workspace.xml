@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92a8d00a-ae30-482f-9dee-678ac7702e4c" name="Changes" comment="Delete your code">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_30_2022_10_12_AM_[Changes]/shelved.patch" beforeDir="false" />
+    <list default="true" id="92a8d00a-ae30-482f-9dee-678ac7702e4c" name="Changes" comment="Delete your code 2">
+      <change afterPath="$PROJECT_DIR$/GameResources/CardResources/jack_face_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameResources/CardResources/jack_face_red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameResources/CardResources/king_face_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameResources/CardResources/king_face_red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameResources/CardResources/queen_face.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameResources/CardResources/queen_face_red.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/card_game_resources/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_game_resources/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/card_game_resources/CardApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_game_resources/CardApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +42,9 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jonat\Desktop\AP CSA\PictureProjectTeam\GameResources\CardResources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="card_games.slapjack" />
     </key>
@@ -91,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649254250545</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Delete your code 2">
+      <created>1650374588425</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1650374588425</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -110,7 +128,8 @@
     <MESSAGE value="Reset Button Fixed" />
     <MESSAGE value="Future Development" />
     <MESSAGE value="Delete your code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete your code" />
+    <MESSAGE value="Delete your code 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete your code 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
