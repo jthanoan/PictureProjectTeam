@@ -17,7 +17,6 @@ public class Solitaire implements CardGame, ImageObserver{
 	private Deck solitaireDeck = new Deck(1, true, xOrigin + 30, yOrigin + 30);
 	
 	private DeckResetButton resetButton = new DeckResetButton(xOrigin + 30, yOrigin + 50);
-	private SolveSolitaireButton solveButton = new SolveSolitaireButton(xOrigin + 200, yOrigin+100);
 	
 	private InteractableObject selectedCard = new Stack(0,0);// = new Card(Card.Suit.SPADES, Card.ACE, false);
 	private boolean cardSelected = false;
@@ -91,7 +90,6 @@ public class Solitaire implements CardGame, ImageObserver{
 			}	
 		}
 		else if(resetButton.wasClicked(pix)) {
-			System.out.println("RESET");;
 			int iterations = solitairePlayer.handSize();
 			for(int i = 0; i < iterations; i++) {
 				Card returningCard = solitairePlayer.getTopCard();
@@ -184,23 +182,23 @@ public class Solitaire implements CardGame, ImageObserver{
 						}
 					}
 
-			}
-			if(!dropped) {
-				if(stackIndex!=-1 && checkAddLegality(stackIndex)) {
-					if(cardFromHand)
-						stacks.get(stackIndex).add((Card) selectedCard);
-					else {
-						stacks.get(stackIndex).add((Stack) selectedCard);
-						if(stackIndex != cardStackOrigin && stacks.get(cardStackOrigin).getNumberOfFaceUpCards() == 0)
-							stacks.get(cardStackOrigin).flipNewCard();
+				}
+				if(!dropped) {
+					if(stackIndex!=-1 && checkAddLegality(stackIndex)) {
+						if(cardFromHand)
+							stacks.get(stackIndex).add((Card) selectedCard);
+						else {
+							stacks.get(stackIndex).add((Stack) selectedCard);
+							if(stackIndex != cardStackOrigin && stacks.get(cardStackOrigin).getNumberOfFaceUpCards() == 0)
+								stacks.get(cardStackOrigin).flipNewCard();
+						}
 					}
-				}
-				else if(cardFromHand) {
-					solitairePlayer.returnCard((Card) selectedCard);
-				}
-				else {
-					
-					stacks.get(cardStackOrigin).add((Stack) selectedCard);
+					else if(cardFromHand) {
+						solitairePlayer.returnCard((Card) selectedCard);
+					}
+					else {
+
+						stacks.get(cardStackOrigin).add((Stack) selectedCard);
 				}
 			}
 			cardSelected = false;
@@ -261,9 +259,6 @@ public class Solitaire implements CardGame, ImageObserver{
 	}
 	
 	public void mouseUpdateAction(boolean mouseDown, Pixel pix) {
-		if(solitaireDeck.size() == 0 && solitairePlayer.handSize() == 0 && !solveButton.isVisible()) {
-			solveButton.switchVisibility();
-		}
 	}
 
 

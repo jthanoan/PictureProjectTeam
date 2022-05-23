@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92a8d00a-ae30-482f-9dee-678ac7702e4c" name="Changes" comment="Delete your code 2">
-      <change afterPath="$PROJECT_DIR$/GameResources/CardResources/jack_face_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameResources/CardResources/jack_face_red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameResources/CardResources/king_face_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameResources/CardResources/king_face_red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameResources/CardResources/queen_face.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameResources/CardResources/queen_face_red.png" afterDir="false" />
+    <list default="true" id="92a8d00a-ae30-482f-9dee-678ac7702e4c" name="Changes" comment="avblim 2">
+      <change afterPath="$PROJECT_DIR$/GameResources/General/reset_game.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameResources/General/reset_game_activated.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/card_game_resources/ResetButton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/card_game_resources/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_game_resources/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/card_game_resources/CardApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_game_resources/CardApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/card_game_resources/GUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/card_games/blackjack/Blackjack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/card_games/slapjack/Slapjack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/card_games/slapjack/SlapjackComputerPlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/card_games/slapjack/SlapjackHumanPlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/card_games/solitaire/DeckResetButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_games/solitaire/DeckResetButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/card_games/solitaire/Solitaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card_games/solitaire/Solitaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/card_games/solitaire/SolveSolitaireButton.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +44,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/GameResources/General" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jonat\Desktop\AP CSA\PictureProjectTeam\GameResources\General" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jonat\Desktop\AP CSA\PictureProjectTeam\GameResources\CardResources" />
     </key>
@@ -109,7 +118,21 @@
       <option name="project" value="LOCAL" />
       <updated>1650374588425</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="avblim">
+      <created>1651153563082</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1651153563082</updated>
+    </task>
+    <task id="LOCAL-00008" summary="avblim 2">
+      <created>1651153609216</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1651153609216</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,17 +152,8 @@
     <MESSAGE value="Future Development" />
     <MESSAGE value="Delete your code" />
     <MESSAGE value="Delete your code 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete your code 2" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/card_game_resources/Button.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="avblim" />
+    <MESSAGE value="avblim 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="avblim 2" />
   </component>
 </project>
